@@ -16,7 +16,7 @@ config.CRON_JOB_RULE = "0 11 * * *"; // daily at 11 am
 // Logging
 config.LOG = {
     FILENAME:"notification.log",
-    LOCATION:"/paytm/logs/notifications",
+    LOCATION:"/logs/notifications",
     PERIOD:"1d", // daily rotation
     COUNT:7 // keep 7 back copies
 };
