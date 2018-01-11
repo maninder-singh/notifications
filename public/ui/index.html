@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Notifications Center</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row pad5 under-line">
+            <div class="col-md-12">
+                <h2>Create New Notifications</h2>
+            </div>
+        </div>
+        <div class="row pad5">
+            <div class="col-md-12">
+                <div class="alert alert-primary hide" id="notification" role="alert">
+                    Notification submitted successfully
+                </div>
+                <div class="alert alert-danger hide" id="error" role="alert">
+
+                </div>
+            </div>
+        </div>
+        <div class="row pad5">
+            <div class="col-md-8">
+                <form name="notificationForm" id="notificationForm">
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-3 col-form-label">Sender Email</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="notificationDate" class="col-sm-3 col-form-label">Date</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="notificationDate" placeholder="Date">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="message" class="col-sm-3 col-form-label">Message</label>
+                        <div class="col-sm-9">
+                            <textarea  rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create Notification</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/lib/jquery-3.2.1.min.js"></script>
+    <script src="/lib/jquery-ui.min.js"></script>
+    <script src="/js/app-ui.js"></script>
+</body>
+</html>
