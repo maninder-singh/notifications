@@ -16,8 +16,8 @@ $ cd notifications/
 $ npm install
 $ PORT={PORT} ENV={ENV} npm start
 
-// PORT = any avaiable port on machine.
-// ENV = dev,qa,prod.
+// {PORT} = any avaiable port on machine.
+// {ENV} = dev,qa,prod.
 // Application run on following http://localhost:{PORT}
 ```
 
